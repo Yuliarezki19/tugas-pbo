@@ -1,0 +1,27 @@
+class belajar_masak:
+    #deklarasi variabel
+    nasi = ""
+    sayur = ""
+    ikan = ""
+
+    def __init__(self,ikan):
+        self.ikan = ikan
+
+    #method untuk mengimput data variabel nasi
+    def get_nasi(self,nasi):
+        self.nasi = nasi
+
+    #method untuk menginput data sayur
+    def get_sayur(self,sayur):
+        self.sayur = sayur
+
+    #method untuk mencetak keseluruhan
+    def cetak_hasil(self):
+        print("\===========================\n",self.ikan)
+        print("Nasi : ", self.nasi)
+        print("Sayur : ",self.sayur)
+
+
+obj = belajar_masak('rasanya mantap')
+var_nasi = input("Nasi : ")
+var_sayur = input("Sayur : ")
